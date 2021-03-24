@@ -6,6 +6,7 @@
 <head>
         <meta charset="utf-8">
         <title>Tharun Peter</title>
+        <link rel="icon" href="img/tharunbg.png" type="image/gif" sizes="16x16">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
@@ -103,7 +104,7 @@
                             </div>
                             <div class="about-text">
                                 <p>
-                                    I am a self-taught Full Stack Web-Developer from Ernalulam .I was a Civil engineer who found passion for coding and web-Dev and want to start a solid career in Tech & make awesome things with Tech .I had an interest computers and making things . But i never got an good opportunity to learn to program or code .
+                                    I am a self-taught Full Stack Web-Developer from Ernakulam .I was a Civil engineer who found passion for coding and web-Dev and want to start a solid career in Tech & make awesome things with Tech .I had an interest computers and making things . But i never got an good opportunity to learn to program or code .
                                     Now I am ueled by high energy levels and boundless enthusiasm, I’m
                                     easily inspired and more then willing to follow my fascinations
                                     wherever they take me. I’m passionate, expressive, multi-talented
@@ -719,8 +720,11 @@
                                       <div class="row">
                                           <div class="col-md-12">
                                               <div class="md-form mb-0">
-                                                  <input type="text" id="subject" name="subject" class="form-control" required placeholder="Type subject here">
+                                                  <input type="text" id="subject" name="subject" class="form-control" required minlength="4" placeholder="Type subject here" oninput="subValid()">
                                                   <label for="subject" class="">Subject</label>
+                                                  <span id="subReq" class="formValid">Subject Required</span>
+                                                  <span id="subLen" class="formValid">Minimum 4 characters required</span>
+                                                  
                                               </div>
                                           </div>
                                       </div>

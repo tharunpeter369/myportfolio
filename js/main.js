@@ -157,6 +157,33 @@ function nameValid() {
     }
   }
 
+  function subValid() {
+    var text = document.getElementById("subject").value;
+    var letters = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    if (text == "") {
+      document.getElementById("subReq").style.display = "block";
+      document.getElementById("subLen").style.display = "none";
+    //    document.getElementById("subErr").style.display = "none";
+    }
+    else if (text.length < 5) {
+        document.getElementById("subLen").style.display = "block";
+        document.getElementById("subReq").style.display = "none";
+    //  document.getElementById("nameErr").style.display = "none";
+      }
+    // else if (!text.match(letters)) {
+    //   document.getElementById("emailErr").style.display = "block";
+    //   document.getElementById("emailReq").style.display = "none";
+
+    //  }
+    else {
+    //   document.getElementById("emailErr").style.display = "none";
+      document.getElementById("subReq").style.display = "none";
+      document.getElementById("subLen").style.display = "none";
+
+    }
+  }
+
 // function emailValid() {
 //     var text = document.getElementById("email").value;
 //     var regx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
